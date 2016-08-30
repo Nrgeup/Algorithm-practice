@@ -2,8 +2,6 @@
 
 using namespace std;
 
-
-
 int ANS[14];
 
 bool if_m_ok(int m,int K){
@@ -23,15 +21,11 @@ bool if_m_ok(int m,int K){
 int main(){
 
     for(int nn = 1;nn <14;nn++){
-       // cout<<nn<<endl;
         int i ,j;
         bool ok = false;
         for( i = 1 ;;i++){
-            //cout<<"xsxsxsxs"<<endl;
             for(j = (2*i -1)*nn+1 ; j <= 2*i*nn ;j++){
-            //cout<<"wwwwwwwwwww"<<endl;
                 if(if_m_ok(j,nn)){
-                   //cout<<j<<endl;
                    ANS[nn] = j;
                     ok = true;
                     break;
