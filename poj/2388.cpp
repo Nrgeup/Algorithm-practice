@@ -1,6 +1,8 @@
 #include <iostream>
 #include <queue>
+#include<fstream>
 using namespace std;
+ofstream fout("output.txt");
 typedef pair<unsigned long, int> node_type;
 int main(){
     unsigned long result[1500];
@@ -16,6 +18,7 @@ int main(){
             case 5: Q.push( make_pair(node.first*5, 5) );
         }
         result[i] = node.first;
+        //fout<<node.first<<"  "<<node.second<<endl;
     }
     int n;
     cin >> n;
