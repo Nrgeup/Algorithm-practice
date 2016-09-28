@@ -1,1 +1,21 @@
-Divisible
+Scenario #1
+Frog Distance = 5.000
+
+Scenario #2
+Frog Distance = 1.414
+
+Scenario #3
+Frog Distance = 1.414
+
+Scenario #4
+Frog Distance = 1.000
+
+Scenario #5
+Frog Distance = 134.350
+
+Scenario #6
+Frog Distance = 1.414
+
+Scenario #7
+Frog Distance = 1408.557
+
