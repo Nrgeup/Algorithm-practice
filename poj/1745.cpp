@@ -9,7 +9,7 @@
 #include<cstdio>
 #include<iostream>
 
-#define LOCAL
+//#define LOCAL
 
 using namespace std;
 
