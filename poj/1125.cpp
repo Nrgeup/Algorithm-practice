@@ -1,17 +1,31 @@
+/*
+floyd算法
+*/
 #include<cstdio>
 #include<iostream>
 #include<cstring>
 
+const int INF = 0x1f3f3f3f;
 
-#define LOCAL
+//#define LOCAL
 
 using namespace std;
-
 
 int MAP[102][102];
 int N;
 
-int
+void floyd(){
+    int i,j,k;
+    for( k = 1; k <= N; k++){
+        for( i = 1; i <= N; i++){
+            for( j = 1; j <= N; j++){
+                if(i == j) { MAP[i][j] = 0; continue;}
+                MAP[i][j] = MAP[i][j] < (MAP[i][k] + MAP[k][j]) ? MAP[i][j] : (MAP[i][k] + MAP[k][j]);
+            }
+        }
+    }
+
+}
 
 int main(){
     //从文件读入
@@ -21,9 +35,13 @@ int main(){
     #endif
 
     /* TO DO  HERE!  */
-    int i,j,temp,temp_n,temp_v;
+    int i,j,temp,temp_n,temp_v,imin,Min,Max;
     while(cin>>N && N){
-        memset(MAP,0,sizeof(MAP));
+
+        for(i = 1; i <= N; i++)
+            for(j = 1;j <= N;j++)
+                MAP[i][j]=INF;
+
         for( i = 1; i <= N; i++){
             cin>>temp;
             for(j = 1; j <= temp; j++){
@@ -31,12 +49,25 @@ int main(){
                 MAP[i][temp_n] = temp_v;
             }
         }
-
+        floyd();
+        Min = INF;
         for(i = 1; i <= N; i++){
+            Max = 0;
             for( j = 1; j <= N; j++){
-                cout<<MAP[i][j]<<" ";
+                if(Max < MAP[i][j]){
+                    Max = MAP[i][j];
+                }
             }
-            cout<<endl;
+            if(Min > Max){
+                imin = i;
+                Min = Max;
+            }
+        }
+        if(Min == INF){
+            cout<<"disjoint\n";
+        }
+        else{
+            cout<<imin<<" "<<Min<<endl;
         }
     }
     return 0;
