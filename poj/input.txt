@@ -1,11 +1,22 @@
 3
-2 2 4 3 5
-2 1 2 3 6
-2 1 2 2 2
-5
-3 4 4 2 8 5 3
-1 5 8
-4 1 6 4 10 2 7 5 2
-0
-2 2 5 1 5
+USDollar
+BritishPound
+FrenchFranc
+3
+USDollar 0.5 BritishPound
+BritishPound 10.0 FrenchFranc
+FrenchFranc 0.21 USDollar
+
+3
+USDollar
+BritishPound
+FrenchFranc
+6
+USDollar 0.5 BritishPound
+USDollar 4.9 FrenchFranc
+BritishPound 10.0 FrenchFranc
+BritishPound 1.99 USDollar
+FrenchFranc 0.09 BritishPound
+FrenchFranc 0.19 USDollar
+
 0
