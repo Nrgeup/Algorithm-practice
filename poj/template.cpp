@@ -4,8 +4,8 @@
 思路：
 
 \****************************************************************************/
-#include<cstdio>
-#include<iostream>
+#include<cstdio>   //尽量使用scanf和printf输入输出
+
 
 //#define LOCAL
 
