@@ -1,6 +1,5 @@
 # acm-train
 
----
 
 ## Introduce
 
