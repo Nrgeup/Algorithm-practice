@@ -1,20 +1,12 @@
-2
-7 9
-ooo**oooo
-**oo*ooo*
-o*oo**o**
-ooooooooo
-*******oo
-o*o*oo*oo
-*******oo
-10 1
-*
-*
-*
-o
-*
-*
-*
-*
-*
-*
+100.0
+4
+Jones
+Smiths
+Howards
+Wangs
+5
+Jones Smiths 2.0
+Jones Howards 4.2
+Jones Wangs 6.7
+Howards Wangs 4.0
+Smiths Wangs 10.0
