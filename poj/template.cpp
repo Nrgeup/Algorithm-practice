@@ -5,6 +5,8 @@
 
 \****************************************************************************/
 #include<cstdio>   //尽量使用scanf和printf输入输出
+#include<algorithm>
+#include<cstring>
 
 
 //#define LOCAL
