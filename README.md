@@ -1,12 +1,9 @@
-# acm-train
-
+# Algorithm Practice
 
 ## Introduce
 
-This is my acm train data, it save the answer of some problem I have pasted in oj !
+There are some algorithm exercises and my answers.
 
-
----
 >
 		               _ooOoo_
 		              o8888888o
@@ -29,4 +26,3 @@ This is my acm train data, it save the answer of some problem I have pasted in o
 	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 		     佛祖保佑       一次AC
 >
----
