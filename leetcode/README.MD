@@ -1,29 +1,12 @@
-# xsx
+# TimeTable
 
-[TOC]
-
-## 1. Two Sum 
-### Solution1:
-暴力枚举法， 简单
-
-    class Solution1(object):
-        def twoSum(self, nums, target):
-            """
-            :type nums: List[int]
-            :type target: int
-            :rtype: List[int]
-            """
-            for i in range(len(nums)):
-                for j in range(i + 1, len(nums)):
-                    if nums[i] + nums[j] == target:
-                        return [i, j]
-## Solution2 
-
-
-
-
-
-
-| Runtime | Memory |
-| :------: | :------: |
-| 4988 ms | 12.5 MB |
+## Day1： 
+ - [ ] [1. Two Sum](./Solutions/1.two_sum.md)
+ - [ ] [15. 3Sum]()
+ - [ ] [167. Two Sum II - Input array is sorted]()
+ - [ ] [18. 4Sum]()
+ - [ ] [653. Two Sum IV - Input is a BST]()
+ 
+ ## Day2:
+ 
+  - [ ] []()
