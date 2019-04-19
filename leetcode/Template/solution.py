@@ -10,16 +10,16 @@ class Solution(object):
         :type target: int
         :rtype: List[int]
         """
-        min_num = min(nums)
-        max_num = max(nums)
-
-
-
-
+        # Add in hash table
+        nums_dict = {}
+        i = 
         for i in range(len(nums)):
-            for j in range(i + 1, len(nums)):
-                if nums[i] + nums[j] == target:
-                    return [i, j]
+            current_num = nums[i]
+            possible_num = target - current_num
+            if possible_num in nums_dict:
+                return [nums_dict[possible_num], i]
+            nums_dict[nums[i]] = i
+
 
 
 ############################  END  ############################
@@ -33,6 +33,9 @@ if __name__ == '__main__':
         test_cases = [
             [
                 [2, 7, 11, 15], 9
+            ],
+            [
+                [2, 5, 5, 11], 10
             ]
         ]
     else:

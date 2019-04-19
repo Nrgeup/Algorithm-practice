@@ -11,7 +11,21 @@ class Solution1(object):
                     return [i, j]
 
 
-
+class Solution2(object):
+    def twoSum(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: List[int]
+        """
+        # Add in hash table
+        nums_dict = {}
+        for i in range(len(nums)):
+            current_num = nums[i]
+            possible_num = target - current_num
+            if possible_num in nums_dict:
+                return [nums_dict[possible_num], i]
+            nums_dict[nums[i]] = i
 
 
 
